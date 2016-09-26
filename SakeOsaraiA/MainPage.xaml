@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/ColdSake.jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="29" Margin="138,24,0,0" TextWrapping="Wrap" Text="お酒アプリ再履修" VerticalAlignment="Top" Width="232"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="44" Margin="55,67,0,0" TextWrapping="Wrap" Text="お酒の名前を入力してください" VerticalAlignment="Top" Width="353"/>
+        <Button x:Name="button" Content="実行" HorizontalAlignment="Left" Height="44" Margin="433,67,0,0" VerticalAlignment="Top" Width="116" Click="button_Click"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="206" Margin="55,130,0,0" VerticalAlignment="Top" Width="494"/>
 
     </Grid>
 </Page>
