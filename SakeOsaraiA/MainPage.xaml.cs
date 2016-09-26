@@ -42,7 +42,12 @@ namespace SakeOsaraiA
                 this.listView.Items.Add(this.textBox.Text);
              }
 
-            //            this.listView.Items.Add(this.textBox.Text);
+         }
+
+
+        private void listView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            this.listView.Items.Remove(this.listView.SelectedValue);
         }
     }
 }
